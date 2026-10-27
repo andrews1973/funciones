@@ -41,17 +41,18 @@ Ejercicio 4:
 Mayor de tres números Escribe una función llamada mayorDeTres que reciba tres números como argumentos y devuelva el número mayor.
 */
 
-function mayorDeTres (num1, num2, num3){
+function mayorDeTres(num1, num2, num3) {
     let mayor;
-    
-    if ((num1 > num2) && (num1 > num3)) {
-    mayor = num1;
-    } else if (num2 > num1 && num2 > num3) {
-        mayor = num2; 
+
+    if (num1 >= num2 && num1 >= num3) {
+        mayor = num1;
+    } else if (num2 >= num1 && num2 >= num3) {
+        mayor = num2;
     } else {
-        mayor = num3; 
+        mayor = num3;
     }
-    return mayor
+
+    return mayor;
 }
 
 console.log(mayorDeTres(1, 5, 2));
